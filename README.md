@@ -81,7 +81,7 @@ The project is divided into two main parts:
   * Clustering analysis
   * Results and visualizations
 
-* **`RAPPORT.pdf`** — Detailed report including:
+* **`RAPPORT.pdf`** — Detailed report in French including:
 
   * Methodology
   * Experimental results
