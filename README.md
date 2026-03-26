@@ -1,21 +1,136 @@
-# Classification_Parkinson
-La maladie de Parkinson est une pathologie neurodégénérative chronique qui affecte
- principalement le système moteur. Elle se manifeste par des tremblements, une rigidité
- musculaire, des troubles de la posture et une lenteur dans les mouvements. Son diagnos
-tic précoce est essentiel afin d’améliorer la qualité de vie des patients et de ralentir la
- progression de la maladie grâce à une prise en charge adaptée.
- Dans le cadre de ce projet, nous exploitons des données biomédicales pour dévelop
-per un système d’aide au diagnostic de la maladie de Parkinson à l’aide de méthodes
- d’intelligence artificielle.
- Le premier objectif consiste à résoudre un problème de classification binaire : à
- partir de caractéristiques extraites de patients, il s’agit de prédire la présence ou non de
- la maladie (étiquettes 0 ou 1). Pour ce faire, nous avons utilisé des techniques d’ap
-prentissage supervisé en mettant en œuvre plusieurs modèles de classification.
- En complément, un second ensemble de données est analysé dans une perspective non
- supervisée. Nous y appliquons des algorithmes de clustering dans le but d’estimer le
- niveau de gravité de la maladie pour chaque patient. Cette approche vise à regrouper les
- patients selon des caractéristiques similaires, permettant ainsi d’identifier des profils types
- ou des stades d’évolution de la maladie de Parkinson.
- Ce rapport présente l’approche méthodologique adoptée, les techniques de prétraite
-ment utilisées, les modèles déployés pour la classification et le clustering, ainsi qu’une
- analyse critique des résultats obtenus.
+
+---
+
+# 🧠 Parkinson Disease Classification & Clustering
+
+This repository presents a data science project focused on **Parkinson’s disease detection and analysis** using machine learning techniques.
+
+---
+
+## 🎯 Project Objective
+
+Parkinson’s disease is a chronic neurodegenerative disorder that primarily affects the motor system, leading to:
+
+* Tremors
+* Muscle rigidity
+* Postural instability
+* Slowness of movement
+
+Early diagnosis is crucial to improve patients’ quality of life and slow disease progression.
+
+👉 The goal of this project is to develop an **AI-based decision support system** for:
+
+1. **Binary classification** → Predict whether a patient has Parkinson’s disease
+2. **Unsupervised analysis** → Identify disease severity levels using clustering
+
+---
+
+## 🧠 Methodology
+
+The project is divided into two main parts:
+
+---
+
+### 🔹 1. Supervised Learning — Disease Classification
+
+* **Task:** Binary classification (0 = Healthy, 1 = Parkinson’s)
+
+* **Input:** Biomedical features extracted from patients
+
+* **Approach:**
+
+  * Data preprocessing and cleaning
+  * Feature selection
+  * Training multiple classification models
+
+* **Goal:** Accurately predict the presence of Parkinson’s disease
+
+---
+
+### 🔹 2. Unsupervised Learning — Severity Analysis
+
+* **Task:** Clustering patients based on similarities
+
+* **Approach:**
+
+  * Application of clustering algorithms (e.g., K-Means, etc.)
+  * Grouping patients into clusters representing potential severity levels
+
+* **Goal:**
+
+  * Identify **patient profiles**
+  * Estimate **disease progression stages**
+
+---
+
+## ⚙️ Techniques Used
+
+* Data preprocessing and normalization
+* Supervised learning models (classification)
+* Unsupervised learning (clustering)
+* Model evaluation and comparison
+
+---
+
+## 📁 Repository Structure
+
+* **`ClassificationParkinson.ipynb`** — Main notebook containing:
+
+  * Data preprocessing
+  * Classification models
+  * Clustering analysis
+  * Results and visualizations
+
+* **`RAPPORT.pdf`** — Detailed report including:
+
+  * Methodology
+  * Experimental results
+  * Interpretation and discussion
+
+* **`README.md`** — Project documentation
+
+---
+
+## 📊 Results
+
+* Successful implementation of a **binary classification system** for Parkinson detection
+* Identification of **patient clusters** reflecting potential severity levels
+* Insights into patterns within biomedical data
+
+👉 Full analysis and results are available in **`RAPPORT.pdf`**
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **Jupyter Notebook**
+* Libraries:
+
+  * `pandas`
+  * `numpy`
+  * `scikit-learn`
+  * `matplotlib` / `seaborn`
+
+---
+
+## 🚀 Future Improvements
+
+* Use advanced models (XGBoost, LightGBM, deep learning)
+* Improve feature engineering on biomedical signals
+* Validate results on larger and more diverse datasets
+* Integrate explainability tools (SHAP, LIME) for medical interpretation
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates the application of **machine learning in healthcare**, combining classification and clustering techniques to assist in the **early diagnosis and analysis of Parkinson’s disease**.
+
+---
+
+💡 *This type of project is highly relevant for AI in healthcare, showcasing both technical skills and real-world impact.*
+
+---
+
+
